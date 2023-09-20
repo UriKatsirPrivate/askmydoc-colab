@@ -4,7 +4,7 @@
 
 ### See the code in action [here](https://askmydoc.app/). You can find sample documents and questions in the "sample-documents" folder.
 
-<a href="https://colab.sandbox.google.com/drive/1Sw9Hr-x9P8gy505TQ8gV2WND2fs8PD_4?resourcekey=0-xk7yw3YuoU02NhvJhXxClw">
+<a href="https://github.com/UriKatsirPrivate/askmydoc-colab/blob/main/askmydoc_colab.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
