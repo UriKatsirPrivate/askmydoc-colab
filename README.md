@@ -14,6 +14,6 @@
 
 ### Usage
 
-<a href="https://colab.research.google.com/drive/1Sw9Hr-x9P8gy505TQ8gV2WND2fs8PD_4?resourcekey=0-xk7yw3YuoU02NhvJhXxClw">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+<a href="https://github.com/UriKatsirPrivate/askmydoc-colab/blob/main/askmydoc_colab.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Run In Colab"/>
 </a>
