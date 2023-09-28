@@ -1,5 +1,3 @@
-import os
-import json
 import vertexai
 from langchain.llms import VertexAI
 import sys
@@ -28,8 +26,4 @@ def initialize_llm():
             top_p=sys.argv[6],
             top_k=sys.argv[7],
             verbose=True,
-        )
-
-
-    
-    
+        )    

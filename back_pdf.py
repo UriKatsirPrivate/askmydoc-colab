@@ -1,4 +1,3 @@
-import vertexai
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings import VertexAIEmbeddings
