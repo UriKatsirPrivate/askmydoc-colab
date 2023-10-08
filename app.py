@@ -19,13 +19,24 @@ import streamlit as st
 from back import generate_response_from_llm
 from back_url import generate_response_from_llm_url
 
+# https://docs.streamlit.io/library/api-reference/utilities/st.set_page_config
+st.set_page_config(
+    page_title="Ask My Doc App",
+    page_icon="icons/vertexai.png",
+    layout="centered",
+    # initial_sidebar_state="expanded",
+    menu_items={
+        'Get help': 'https://cloud.google.com/vertex-ai?hl=en',
+        'About': "#### Created by [Uri Katsir](https://www.linkedin.com/in/uri-katsir/)"
+    }
+)
+
 # Constants
 ACCEPTED_FILE_TYPES = ['txt', 'py', 'tf', 'sh', 'yaml']
 DOCUMENT_OPTIONS = ['Please Select', 'URL', 'File Upload']
 
 # Page title
-st.set_page_config(page_title='Ask My Doc App')
-st.title('Ask My Doc App')
+st.title('Ask My Doc')
 
 # options = ['Please Select','File Upload','URL']
 selected_option = st.selectbox('Select Document Type', DOCUMENT_OPTIONS)
