@@ -1,7 +1,9 @@
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import PyPDFLoader
-from langchain.embeddings import VertexAIEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_google_vertexai import VertexAIEmbeddings
+# from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
+
 from initialization import *
 
 llm = initialize_llm()

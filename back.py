@@ -1,7 +1,7 @@
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
-from langchain.embeddings import VertexAIEmbeddings
+from langchain_google_vertexai import VertexAIEmbeddings
 from initialization import *
 
 llm = initialize_llm()
@@ -27,7 +27,7 @@ def generate_response_from_llm(uploaded_file, query_text):
                 return "Error in processing document"
 
             # Select embeddings
-            embeddings = VertexAIEmbeddings()
+            embeddings = VertexAIEmbeddings(model_name="textembedding-gecko@001")
             # Create a vectorstore from documents
             db = Chroma.from_documents(texts, embeddings)
             # Create retriever interface

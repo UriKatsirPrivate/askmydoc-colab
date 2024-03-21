@@ -1,5 +1,5 @@
 import vertexai
-from langchain.llms import VertexAI
+from langchain_google_vertexai import VertexAI
 import sys
 
 # print ("Number of arguments:", len(sys.argv), "arguments")
@@ -10,9 +10,9 @@ def initialize_llm():
     if len(sys.argv)<=1: # No external passed
         vertexai.init(project="landing-zone-demo-341118", location="us-central1")
         return VertexAI(
-            model_name="text-bison@001",
-            max_output_tokens=1024,
-            temperature=0.1,
+            model_name="gemini-1.0-pro-001",
+            max_output_tokens=8192,
+            temperature=0.5,
             top_p=0.8,
             top_k=40,
             verbose=True,
