@@ -3,11 +3,12 @@ source myenv/bin/activate
 python3 -m pip install --upgrade pip
 export SYSTEM_VERSION_COMPAT=1
 pip3 install -r requirements.txt
+
 streamlit run app.py "landing-zone-demo-341118"  \
                                                 "us-central1"  \
-                                                "text-bison@001"  \
-                                                1024 \
-                                                0.1 \
+                                                "gemini-1.0-pro-001"  \
+                                                8192 \
+                                                0.5 \
                                                 0.8 \
                                                 40 \
 
